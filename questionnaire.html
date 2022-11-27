@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="assets/css/style1.css" type = "text/css">
+    <script src = "assets/js/js1.js"></script>
+  </head>
+  <body>
+    <h2>Choose your Witcher school</h2>
+    <h3>Fill in the fields of the questionnaire</h3>
+    <form name = "AllForms">
+      <section>
+      <div>
+        <table>
+          <tr>
+            <td><b>Назови себя, воин</b></td>
+            <td><input name="nameHero"></td>
+          </tr>
+          <tr>
+            <td><b>Откуда ты прибыл, воин?</b></td>
+            <td><input name = "county"></td>
+          </tr>
+          <tr>
+            <td><b>Сколько лет владеете мечом?</b></td>
+            <td><input name ="swoord" class="lol" onFocus="this.Select()"></td>
+          </tr>
+          <tr>
+            <td><b>Выбейте адрес вашей избы</b></td>
+            <td><input name = "house"></td>
+          </tr>
+          <tr>
+            <td><b>Ваша любимая игрушка из бестриария</b></td>
+            <td><input name = "Pet"></td>
+          </tr>
+        </table>
+        <h4>Придумайте пароль от комнаты Каэр Морхена</h4>
+    </div>
+    <div>
+
+      <table>
+        <tr>
+          <td><b>Идентификатор меча ведьмака</b></td>
+          <td><input name="id"></td>
+        </tr>
+        <tr>
+          <td><b>Пароль от комнаты</b></td>
+          <td><input type="password" name="password1" onFocus="this.select();"></td>
+        </tr>
+        <tr>
+          <td><b>Проверка пароля от комнаты</b></td>
+          <td><input type="password" name="password2"  onFocus="this.select();"></td>
+        </tr>
+      </table>
+    </div>
+    <h4>Выберете школу</h4>
+    <div>
+      <select name="items" size="4">
+        <option value="Wolf" selected> Школа Волка
+        <option value="Cat"> Школа Кота
+        <option value="Bear"> Школа Медведя
+        <option value="Grifon"> Школа Грифона
+        <option value="Manticore"> Школа Мантикоры
+        <option value="Snake"> Школа Змеи
+      </select>
+    </div>
+    <div>
+      <input type="button" value="Отправить данные Весемиру" onClick ="AllComplite();">
+      <input type="reset" value="Сначала">
+    </div>
+      </section>
+    </form>
+  </body>
+</html>
